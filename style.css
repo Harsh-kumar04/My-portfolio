@@ -1,0 +1,467 @@
+/* General Reset and Body Styling */
+body {
+  margin: 0;
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+  font-family: "Raleway", sans-serif;
+}
+
+h1 {
+  margin-bottom: 15px;
+  font-weight: 100;
+  text-transform: capitalize;
+  font-size: 1cm;
+}
+
+p {
+  font-size: 1.6em;
+  line-height: 1.8;
+  color: #000000;
+}
+
+.me {
+  padding: 0;
+  color: rgb(0, 0, 0);
+  text-transform: capitalize;
+  margin-bottom: 30px;
+}
+
+.me:hover {
+  color: #304d4d;
+}
+
+.box {
+  width: 100%;
+  height: 490px;
+  background-color: #3e56cb;
+  margin: 20px;
+}
+
+.box ul {
+  color: rgb(255, 255, 255);
+}
+
+.box h1 {
+  color: #ffffff;
+  text-align: center;
+  font-weight: 500;
+}
+
+.container {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  zoom: 80%;
+}
+
+/* Sidebar Styling */
+.sidebar {
+  width: 20%;
+  background-color: rgb(255, 255, 255);
+  padding: 60px;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sidebar ul {
+  list-style: none;
+  margin: 19px;
+  font-size: 22px;
+}
+
+.sidebar ul li {
+  margin: 15px 0;
+}
+
+.sidebar h1 {
+  color: #000000;
+  font-size: 2em;
+  text-align: center;
+}
+
+.sidebar ul li a {
+  text-decoration: none;
+  color: #000000;
+  display: block;
+  padding: 10px;
+  border-radius: 2px;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.sidebar ul li a:hover {
+  background-color: #b5b5b5;
+}
+
+/* General Styles for Timeline */
+#timeline {
+  background-color: #0e153a;
+  color: #fff;
+  padding: 50px 50px;
+  text-align: center;
+  height: 500px;
+}
+
+#timeline h2 {
+  align-items: center;
+  font-size: 3rem;
+  padding-bottom: 20px;
+}
+#timeline h3 {
+  font-size: 2rem;
+}
+
+.timeline {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+  margin-top: 60px;
+
+}
+
+.timeline-item {
+  margin-bottom: 7px;
+  position: relative;
+}
+
+.timeline-line {
+  position: absolute;
+  left: 0%;
+  top: 20px;
+  bottom: -30px;
+  width: 2px;
+  background-color: #ffffff;
+  transform: translateX(-50%);
+}
+
+.timeline-dot {
+  width: 15px;
+  height: 15px;
+  background-color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  transform: translate(-50%, -50%);
+}
+
+.timeline-item::before {
+  position: absolute;
+  width: 2px;
+  background-color: #fff;
+  height: 100%;
+  left: 7px;
+  top: 15px;
+  z-index: -1;
+}
+
+.timeline-content {
+  margin-left: 40px;
+  text-align: left;
+}
+
+.timeline-content p {
+  margin: 0;
+  margin-bottom: 5px;
+  font-size: 1.8em;
+  color: #cfcfcf;
+}
+
+.certificate {
+  background-color: #a7a7a7;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  color: #ffffff;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.certificate:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  background-color: #6a6f84;
+}
+
+
+#certificates {
+  margin: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.certificate-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid #131313;
+  border-radius: 10px;
+  padding: 15px;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.certificate-content .text {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.certificate-content .text h3 {
+  margin: 0;
+  font-size: 1.8em;
+  color: #000000;
+}
+
+.certificate-content .text p {
+  margin: 10px 0;
+  color: #101010;
+  font-size: 0.6cm;
+}
+
+.certificate-content .text a {
+  text-decoration: none;
+  color: #007bff;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.certificate-content .text a:hover {
+  color: #0056b3;
+}
+
+.certificate-content .image img {
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.certificate-content .image a {
+  display: inline-block;
+}
+
+
+
+
+
+
+
+/* Content Section */
+.content {
+  flex-grow: 1;
+  padding: 20px;
+  overflow-y: auto;
+  background-color: #eaeaea;
+  display: flex;
+  flex-direction: column;
+}
+
+section {
+  margin-bottom: 40px;
+}
+
+#projects {
+  margin-bottom: 9px;
+}
+
+/* Container for Projects (Train Boxes) */
+.projects-container {
+  display: flex;
+  overflow-x: auto; /* Allows horizontal scrolling if needed */
+  white-space: nowrap; /* Prevents wrapping */
+  padding: 10px 10px; /* Adds some spacing around the row */
+  gap: 10px; /* Removes gap between train boxes */
+}
+
+/* Individual Train Box Style */
+.project {
+  background-color: #d1d1d1;
+  padding: 20px;
+  width: 260px; /* Uniform width for all boxes */
+  height: 250px; /* Uniform height for all boxes */
+  border-radius: 10px;
+  color: #ffffff;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+  flex-shrink: 0; /* Prevents shrinking to maintain train-like appearance */
+  overflow: hidden;
+  white-space: normal;
+}
+  
+#projects h1{
+  margin-top: 180px;
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  text-align: left;
+  border-bottom: 3px solid #0e153a;
+  padding-bottom: 10px;
+  
+}
+
+.project:hover {
+  transform: scale(1.05); /* Slight zoom effect on hover */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  background-color: #989cad;
+}
+
+/* Add optional spacing for content inside boxes */
+.project h2 {
+  margin-bottom: 10px;
+  color: #162c43;
+}
+
+.project p {
+  font-size: 1.2em;
+
+}
+
+
+/* Contact Section */
+
+#contact {
+  padding: 20px; /* Increase padding for better spacing */
+  background-color: #0e153a;
+  display: flex;
+  flex-wrap: wrap; /* Ensures elements wrap on smaller screens */
+  gap: 20px; /* Adds space between child elements */
+  justify-content: center; /* Centers child elements horizontally */
+  align-items: flex-start; /* Aligns child elements at the top */
+  margin-top: 200px;
+}
+
+#contact h1 {
+  font-size: 2.5em;
+  margin-bottom: 20px; /* Reduce space below the heading */
+  text-align: center;
+  border-bottom: 3px solid #a0a0a0;
+  padding-bottom: 10px;
+  color: #ffffff;
+  width: 100%; /* Ensures the heading spans the full width of the container */
+}
+
+
+.email{
+  text-align: center;
+  padding-top: 40px;
+  color: #ffffff;
+  font-size: 1cm;
+  width: 100%;
+  font-size: 1.5em; /* Adjust size */
+  text-decoration: none; /* Remove underline */
+  padding: 10px 20px; /* Add spacing */
+}
+
+.contact-info {
+background-color: #d1d1d1;
+padding: 20px;
+width: 220px; /* Uniform width for all boxes */
+height: 210px; /* Uniform height for all boxes */
+border-radius: 10px;
+color: #ffffff;
+text-align: center;
+transition: transform 0.3s, box-shadow 0.3s;
+flex-shrink: 0;
+margin-top: 20px;
+}
+
+.contact-info:hover {
+  transform: scale(1.05); /* Slight zoom effect */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Add shadow on hover */
+}
+
+.resume-card {
+  background-color: #9a9a9a;
+  color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.resume-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.resume-card a {
+  display: inline-block;
+  margin-top: 10px;
+  color: #ffffff;
+  text-decoration: none;
+  background-color: #1a2b5f;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+.resume-card h3{
+  font-size: 30px;
+}
+
+.resume-card a:hover {
+  background-color: #273a7f;
+}
+
+
+
+
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column; /* Stack items vertically on smaller screens */
+  }
+
+  .sidebar {
+    width: 100%; /* Sidebar takes full width on smaller screens */
+    padding: 20px;
+  }
+
+  .sidebar ul li {
+    font-size: 18px; /* Reduce font size in sidebar */
+    margin: 10px 0;
+  }
+
+  .certificate,
+  .project {
+    padding: 15px;
+    margin-bottom: 10px;
+  }
+
+  #contact h1 {
+    font-size: 2em; /* Adjust font size for smaller screens */
+  }
+
+  #contact p {
+    font-size: 1.2em;
+    
+  }
+ 
+
+  #timeline {
+    padding: 30px; /* Adjust padding for smaller screens */
+    height: auto; /* Allow height to adjust based on content */
+  }
+
+  .timeline {
+    width: 100%; /* Make timeline full width */
+  }
+
+  .timeline-item {
+    margin-bottom: 10px; /* Add more spacing between items */
+  }
+
+  .timeline-dot {
+    width: 12px; /* Make dots smaller */
+    height: 12px;
+  }
+
+  /* Hide the sidebar menu and make it a hamburger on smaller screens */
+  .sidebar {
+    display:none;
+  }
+
+  .sidebar.active {
+    display: flex;
+    transform: translateX(0);
+  }
+}
