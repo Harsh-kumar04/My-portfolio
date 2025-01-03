@@ -69,7 +69,7 @@ p {
   color: #fff;
   padding: 50px 50px;
   text-align: center;
-  height: 560px;
+  height: 700px;
 }
 
 #timeline h2 {
@@ -293,4 +293,112 @@ p {
 .skill p {
   margin: 0;
   font-weight: bold;
+}  
+
+/* Mobile responsiveness for Timeline */
+@media (max-width: 768px) {
+  #timeline {
+    padding: 30px 20px; /* Adjust padding for mobile */
+    height: auto; /* Allow height to adjust based on content */
+  }
+
+  #timeline h2 {
+    font-size: 2rem; /* Reduce font size */
+    margin-bottom: 20px;
+  }
+
+  .timeline {
+    margin-top: 40px; /* Reduce margin for better spacing */
+    max-width: 100%;
+  }
+
+  .timeline-item {
+    margin-bottom: 40px; /* Increase spacing between items */
+  }
+
+  .timeline-line {
+    top: 10px; /* Adjust position of the line */
+    bottom: -10px;
+  }
+
+  .timeline-dot {
+    width: 12px;
+    height: 12px;
+  }
+
+  .timeline-item::before {
+    height: auto;
+    top: 10px; /* Adjust line position */
+  }
+
+  .timeline-content {
+    margin-left: 20px; /* Reduce left margin for smaller screens */
+  }
+
+  .timeline-content p {
+    font-size: 1.2em; /* Reduce font size */
+  }
 }
+
+/* Mobile responsiveness for Certificates */
+@media (max-width: 768px) {
+  .certificate {
+    padding: 10px; /* Adjust padding */
+    width: 100%; /* Make certificate take full width */
+  }
+
+  .certificate-content {
+    padding: 10px;
+    flex-direction: column; /* Stack certificate content vertically */
+    align-items: flex-start; /* Align text to the left */
+  }
+
+  .certificate-content .text {
+    margin-right: 0; /* Remove margin for smaller screens */
+  }
+
+  .certificate-content .text h3 {
+    font-size: 1.5rem; /* Reduce font size for better readability */
+  }
+
+  .certificate-content .text p {
+    font-size: 1rem; /* Adjust font size for better readability */
+  }
+
+  .certificate-content .image a {
+    margin-top: 10px; /* Add margin for better spacing */
+  }
+
+  .certificate:hover {
+    transform: translateY(0); /* Remove hover translate effect on small screens */
+    box-shadow: none; /* Remove box shadow on small screens */
+  }
+}
+
+@media (max-width: 480px) {
+  #timeline h2 {
+    font-size: 1.8rem; /* Further reduce font size for smaller screens */
+  }
+
+  .timeline-content p {
+    font-size: 1em; /* Smaller font size for paragraphs */
+  }
+
+  .certificate-content .text h3 {
+    font-size: 1.3rem; /* Further reduce font size */
+  }
+
+  .certificate-content .text p {
+    font-size: 0.9rem; /* Reduce font size */
+  }
+
+  .certificate {
+    padding: 8px; /* Slightly smaller padding */
+  }
+
+  .timeline-dot {
+    width: 10px;
+    height: 10px; /* Smaller timeline dots */
+  }
+}
+
