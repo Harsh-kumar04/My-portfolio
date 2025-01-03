@@ -32,6 +32,8 @@ p {
   color: rgb(0, 0, 0);
   text-transform: capitalize;
   margin-bottom: 30px;
+  margin-left: 20px;
+
 }
 
 .me:hover {
