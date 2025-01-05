@@ -31,13 +31,16 @@ p {
   padding: 0;
   color: rgb(0, 0, 0);
   text-transform: inherit;
-  
-  margin-bottom: 30px;
-  margin-left: 20px;
+  margin-bottom: 2em; /* Relative unit */
+  margin-left: 1em; /* Relative unit */
+  text-align: left;
+  margin-right: 1em;
+  font-weight: 100;
 }
 
+
 .me:hover {
-  color: #304d4d;
+  color: #2b2b2b;
   font-weight: 600;
 }
 
@@ -276,7 +279,7 @@ p {
   flex-wrap: wrap;
   justify-content: center;
   gap: 20px;
-  margin: 20px;
+  margin: 2px;
 }
 
 .skill {
@@ -306,6 +309,15 @@ p {
   margin: 0;
   font-weight: bold;
 }  
+@media (max-width: 768px) {
+  .me {
+    margin-bottom: 25px;
+    margin-left: 10px;
+    font-size: 20px; /* Adjust font size for smaller screens */
+    text-align: center; 
+    margin-right: 10px;
+  }
+}
 
 /* Mobile responsiveness for Timeline */
 @media (max-width: 768px) {
