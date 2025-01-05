@@ -197,7 +197,7 @@ p {
 }
 
 .certificate {
-  background-color: #a7a7a7;
+  background-color: #d1d1d1;
   padding: 2px;
   border-radius: 10px;
   margin-bottom: 15px;
@@ -208,7 +208,7 @@ p {
 .certificate:hover {
   transform: translateY(-10px);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
-  background-color: #0e153a;
+  background-color: #989cad;
   border-color: wheat;
   color: white; /* Ensures all text inside changes to white */
 }
@@ -250,6 +250,16 @@ p {
 }
 
 #contact{
+  color: rgb(255, 255, 255);
+}
+
+.con{
+  align-items: center;
+  margin-right: 50px;
+}
+.cont{
+  align-items: center;
+  margin-right: 50px;
   color: white;
 }
 
