@@ -1,6 +1,6 @@
 # My-portfolio
 
-I'm excited to share my portfolio website with you all! 🎉 In this website, I've included details about my minor and major projects,  Certifications, as well as my acadamic status and skills. You can check it out https://my-portfolio-murex-sigma-80.vercel.app/
+I'm excited to share my portfolio website with you all! 🎉 In this website, I've included details about my minor and major projects,  Certifications, as well as my acadamic status and skills. You can check it out [https://my-portfolio-murex-sigma-80.vercel.app/](https://harshkumar412.vercel.app/)
 
 This is my portfolio website where I showcase my technical skills and projects. It is built using the following technologies:
 
